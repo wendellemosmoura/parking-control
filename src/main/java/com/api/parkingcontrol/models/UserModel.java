@@ -6,6 +6,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.UUID;
@@ -15,6 +16,8 @@ import java.util.UUID;
 @Setter
 @Table(name = "TB_USER")
 public class UserModel implements UserDetails, Serializable {
+
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id

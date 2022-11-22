@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -14,6 +15,8 @@ import java.util.UUID;
 @Setter
 @Table(name = "TB_PARKING_SPOT")
 public class ParkingSpotModel implements Serializable {
+
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
